@@ -32,8 +32,8 @@ functions:
     timeout: 10
 
     events:
-      # Every day at 15:00 UTC / 10am CDT
-      - schedule: cron(0 15 * * ? *)
+      # Every day at 21:00 UTC
+      - schedule: cron(0 21 * * ? *)
 
     environment:
       SLACK_WEBHOOK_URL: ${opt:slack_url}
